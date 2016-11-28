@@ -1,0 +1,148 @@
+body
+{
+background-color:#dbdbdb;
+}
+h1{
+color:#aaa;
+font-family:sans-serif;
+}
+
+/*styling each wrapper id*/
+
+div.wrapper
+{
+position:absolute;
+margin-left:-100px;
+margin-top:-100px;
+background-color:#eee;
+padding:100px;
+perspective:1500px;
+top:50%;
+left:50%;
+-webkit-transition:all 1.4s;
+}
+.wrapper div
+{
+top:32px;
+left:32px;
+width:130px;
+background-color:cyan;
+height:130px;
+position:absolute;
+-webkit-transition:all 1s;
+}
+.wrapper:hover 
+{
+-webkit-transition:all 1.8s;
+-webkit-transform:rotate(135deg);
+}
+.wrapper:hover .right
+{
+-webkit-transform:rotate3d(0,1,0,180deg);
+-webkit-transition:-webkit-transform 0.8s;
+-webkit-transition-delay: 0.15s;}
+
+.wrapper:hover .bl
+{
+-webkit-transform:rotate3d(0,0,1,180deg);
+-webkit-transition:-webkit-transform 0.8s;
+-webkit-transition-delay: 0.25s;
+
+}
+
+.wrapper:hover .top
+{
+-webkit-transform:rotate3d(1,0,0,180deg);
+-webkit-transition:all 0.8s;
+-webkit-transition-delay: .35s;
+
+}
+.wrapper:hover .tl
+{
+-webkit-transform:rotate3d(0,0,1,180deg);
+-webkit-transition:-webkit-transform 0.8s;
+-webkit-transition-delay: 0.45s;
+
+}
+.wrapper:hover .left
+{
+-webkit-transform:rotate3d(0,1,0,-180deg);
+-webkit-transition:-webkit-transform 0.8s;
+-webkit-transition-delay: 0.55s;
+
+}
+
+.wrapper:hover .br
+{
+-webkit-transform:rotate3d(0,0,1,180deg);
+-webkit-transition:-webkit-transform 0.8s;
+-webkit-transition-delay: 0.65s;
+
+}
+
+.wrapper:hover .bot
+{
+-webkit-transform:rotate3d(1,0,0,180deg);
+-webkit-transition:-webkit-transform 0.8s;
+-webkit-transition-delay: 0.75s;
+
+}
+.wrapper:hover .tr
+{
+-webkit-transform:rotate3d(0,0,1,180deg);
+-webkit-transition:-webkit-transform 0.8s;
+-webkit-transition-delay: 0.85s;
+
+}
+
+
+
+/*setting each div background*/
+.center{
+background-image: url('b (3).jpg');
+background-size:cover;
+background-position:center;
+}
+.bot{
+background-image: url('b (2).jpg');
+background-size:cover;
+-webkit-transform-origin:bottom;
+-webkit-transition-delay: 2s;
+}
+.right{
+-webkit-transform-origin:right;
+background-image: url('b (2).png');
+background-size:cover;
+}
+.top{
+background-image: url('b (1).jpg');
+background-size:cover;
+-webkit-transform-origin:top;
+}
+.left{
+-webkit-transform-origin:left;
+background-image: url('b (1).png');
+background-size:cover;
+}
+.bl{
+-webkit-transform-origin:100% 0%;
+background-image: url('b (6).jpg');
+background-size:cover;
+}
+
+.tr{
+-webkit-transform-origin:100% 100%;
+background-image: url('b (4).jpg');
+background-size:cover;
+}
+
+.br{
+-webkit-transform-origin:0% 100%;
+background-image: url('b (5).jpg');
+background-size:cover;
+}
+.tl{
+-webkit-transform-origin:0% 0%;
+background-image: url('b (4).png');
+background-size:cover;
+}
